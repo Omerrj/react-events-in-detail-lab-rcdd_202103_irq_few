@@ -6,6 +6,6 @@ export default function ({onReceiveCoordinates}){
   };
 
 
-    return <button onClick={this.handleClick}>Coords</button>;
+    return <button onClick={handleClick}>Coords</button>;
   
 }
