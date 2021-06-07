@@ -4,8 +4,8 @@ export default function({onDelayedClick,delay}) {
   const handleClick = event => {
     event.persist();
     window.setTimeout(() => {
-      this.props.onDelayedClick(event);
-    }, this.props.delay);
+    onDelayedClick(event);
+    }, delay);
   };
 
   render() {
