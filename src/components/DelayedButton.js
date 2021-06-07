@@ -1,7 +1,7 @@
 import React from 'react';
 
-e {
-  handleClick = event => {
+export default function({onDelayedClick}) {
+  const handleClick = event => {
     event.persist();
     window.setTimeout(() => {
       this.props.onDelayedClick(event);
@@ -12,5 +12,3 @@ e {
     return <button onClick={this.handleClick}>Delayed</button>;
   }
 }
-
-export default DelayedButton;
