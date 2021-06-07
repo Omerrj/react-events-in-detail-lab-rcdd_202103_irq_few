@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function({onDelayedClick}) {
+export default function({onDelayedClick,delay}) {
   const handleClick = event => {
     event.persist();
     window.setTimeout(() => {
