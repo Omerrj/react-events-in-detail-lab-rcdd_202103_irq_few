@@ -8,7 +8,7 @@ export default function({onDelayedClick,delay}) {
     }, delay);
   };
 
-  render() {
+
     return <button onClick={this.handleClick}>Delayed</button>;
   }
-}
+
