@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function (){
+export default function ({onReceiveCoordinates}){
   const handleClick = event => {
    onReceiveCoordinates([event.clientX, event.clientY]);
   };
